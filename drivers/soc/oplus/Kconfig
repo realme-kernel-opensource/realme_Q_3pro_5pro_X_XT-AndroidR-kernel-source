@@ -1,0 +1,10 @@
+#ifdef VENDOR_EDIT
+#wen.luo@BSP.Kernel.Stability 2020/03/25 add for oplus kernel system
+source "drivers/soc/oplus/system/Kconfig"
+#endif /* VENDOR_EDIT */
+
+#ifdef OPLUS_FEATURE_POWERINFO_STANDBY
+source "drivers/soc/oplus/owakelock/Kconfig"
+#endif /* OPLUS_FEATURE_POWERINFO_STANDBY */
+
+source "drivers/soc/oplus/oplus_healthinfo/Kconfig"

@@ -1,0 +1,25 @@
+menu "SOC (System On Chip) specific Drivers"
+
+source "drivers/soc/bcm/Kconfig"
+source "drivers/soc/fsl/qbman/Kconfig"
+source "drivers/soc/fsl/qe/Kconfig"
+source "drivers/soc/mediatek/Kconfig"
+source "drivers/soc/qcom/Kconfig"
+source "drivers/soc/rockchip/Kconfig"
+source "drivers/soc/samsung/Kconfig"
+source "drivers/soc/sunxi/Kconfig"
+source "drivers/soc/tegra/Kconfig"
+source "drivers/soc/ti/Kconfig"
+source "drivers/soc/ux500/Kconfig"
+source "drivers/soc/versatile/Kconfig"
+source "drivers/soc/oppo/Kconfig"
+source "drivers/soc/oplus/Kconfig"
+#ifdef OPLUS_FEATURE_THERMAL_HORAE
+#Gen.Yin@BSP.Power.Thermal 2021/03/16 add for horae
+source "drivers/soc/oplus/thermal/Kconfig"
+#endif /* OPLUS_FEATURE_THERMAL_HORAE */
+
+#ifdef OPLUS_FEATURE_LOWMEM_DBG
+source "drivers/soc/oplus/lowmem_dbg/Kconfig"
+#endif /* OPLUS_FEATURE_LOWMEM_DBG */
+endmenu

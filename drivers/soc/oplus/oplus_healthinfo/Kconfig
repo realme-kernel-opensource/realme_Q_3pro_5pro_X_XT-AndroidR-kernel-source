@@ -1,0 +1,12 @@
+#ifdef OPLUS_FEATURE_HEALTHINFO
+config OPLUS_HEALTHINFO
+bool "config healthinfo"
+help
+    define this config to init  healthinfo.
+config CAMERA_OPT
+	bool "config camera opt"
+	default n
+	help
+	  reduce camera provider task runnable time
+#endif /* OPLUS_FEATURE_HEALTHINFO */
+
